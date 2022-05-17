@@ -1,4 +1,4 @@
-# Project 3 IS-601
+# Blank Flask App
 
 [![Production Workflow 1](https://github.com/DianaZawislak/Blank-Flask-Application-starter/actions/workflows/prod.yml/badge.svg)](https://github.com/DianaZawislak/IS601-Project-3/actions/workflows/prod.yml)
 
