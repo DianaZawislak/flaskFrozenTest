@@ -1,14 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
+     <h1 style="text-align: center">Welcome to my portfolio</h1>
+ <hr class="featurette-divider">
     <div class="row">
         <article class="col-8 lh-lg fs-5 mb-3">
 
-
-          <!--  <img src="{{ url_for('static', filename='images/music.png') }}"
+            <h3> RESUME</h3>
+           <img src="{{ url_for('static', filename='images/resume2022.JPG') }}"
                          class="img-fluid mb-5" alt="music" width="400"
-                         loading="lazy">-->
-            <h2>Welcome to my portfolio.</h2>
-            <hr class="featurette-divider">
+                         loading="lazy">
+
+
             <p>
                 {{ lipsum (n=2, html=True, min=20, max=50) }}
             </p>
