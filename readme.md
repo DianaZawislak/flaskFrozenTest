@@ -7,7 +7,7 @@
 * [Production Deployment](https://dianazawislak-portfolio.herokuapp.com)
 
 
-[![Production Workflow 1](https://github.com/DianaZawislak/My-Portfolio/actions/workflows/prod.yml/badge.svg)](https://github.com/DianaZawislak/My-Portfolio/actions/workflows/dev.yml)
+[![Development Workflow 3.8](https://github.com/DianaZawislak/My-Portfolio/actions/workflows/dev.yml/badge.svg)](https://github.com/DianaZawislak/My-Portfolio/actions/workflows/dev.yml)
 * [Developmental Deployment](https://portfolio-diana-dev.herokuapp.com)
 
 
