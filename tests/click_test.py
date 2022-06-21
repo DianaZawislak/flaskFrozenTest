@@ -18,10 +18,10 @@ def test_create_log_folder():
     assert response == True
 
 
-def test_create_database():
-    response = runner.invoke(create_database)
-    assert response.exit_code == 0
-    root = os.path.dirname(os.path.abspath(__file__))
-    dbdir = os.path.join(root, '../database')
-    response = os.path.exists(dbdir)
-    assert  response == True
+#def test_create_database():
+ #   response = runner.invoke(create_database)
+  #  assert response.exit_code == 0
+   # root = os.path.dirname(os.path.abspath(__file__))
+    #dbdir = os.path.join(root, '../database')
+    #response = os.path.exists(dbdir)
+    #assert  response == True
