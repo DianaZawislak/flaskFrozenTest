@@ -242,9 +242,9 @@ a {
  */
 
 #myImg {
-    border-radius: 5px;
+    border-radius: 0px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 1s;
     display: block;
     margin-left: auto;
     margin-right: auto
