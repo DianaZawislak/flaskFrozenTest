@@ -3,20 +3,49 @@
      <h1 style="text-align: center">Welcome to my portfolio</h1>
  <hr class="featurette-divider">
     <div class="row">
-        <article class="col-8 lh-lg fs-5 mb-3">
+        <article class="col-9 lh-lg fs-5 mb-3">
 
-            <h3> RESUME</h3>
-           <img src="{{ url_for('static', filename='images/resume2022.JPG') }}"
-                         class="img-fluid mb-5" alt="resume" width="400"
+            <h3> RESUME  (click to see in full screen)</h3>
+          <img id="myImg" src="{{ url_for('static', filename='images/resume2022.JPG') }}"
+                         class="img-fluid mb-5" alt="resume" width="900"
                          loading="lazy">
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+   <img class="modal-content" id="img01">
 
-            <p>
-                {{ lipsum (n=2, html=True, min=20, max=50) }}
-            </p>
+</div>
             <hr class="featurette-divider">
         </article>
 
     </div>
+
+   <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+
+// When the user clicks on <span> (x), close the modal
+modal.onclick = function() {
+    img01.className += " out";
+    setTimeout(function() {
+       modal.style.display = "none";
+       img01.className = "modal-content";
+     }, 400);
+
+ }
+
+</script>
 {% endblock %}
 

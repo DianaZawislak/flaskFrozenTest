@@ -161,3 +161,114 @@ a {
     background-color: transparent;
 
 }
+
+/*---------------zoom in images---------------------*/
+#zoomA {
+  /* OPTIONAL DIMENSIONS */
+  width: auto;
+  height: auto;
+
+  /*ANIMATE ZOOM */
+  /* ease | ease-in | ease-out | linear */
+  transition: transform ease-in-out 0.5s;
+}
+
+/*ZOOM ON HOVER */
+#zoomA:click { transform: scale(1.7); }
+.contbcgrd {
+    background-color: darkgray;
+}
+
+
+#zoomC {
+  /* (A) DIMENSIONS */
+  width: 900px;
+  height: auto;
+
+  /* (B) BACKGROUND IMAGE */
+  background: url(../images/resume2022.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+
+/*----------------LIGHTBOX----------------------------------------*/
+/* (A) LIGHTBOX BACKGROUND */
+#lightbox {
+  /* (A1) COVERS FULLSCREEN */
+  position: fixed; z-index: 999;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+
+  /* (A2) BACKGROUND */
+  background: rgba(0, 0, 0, 0.5);
+
+  /* (A3) CENTER IMAGE ON SCREEN */
+  display: flex;
+  align-items: center;
+  align-items: center;
+
+  /* (A4) HIDDEN BY DEFAULT */
+  visibility: hidden;
+  opacity: 0;
+
+  /* (A5) SHOW/HIDE ANIMATION */
+  transition: opacity ease 0.4s;
+}
+
+/* (A6) TOGGLE VISIBILITY */
+#lightbox.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* (B) LIGHTBOX IMAGE */
+#lightbox img {
+  /* (B1) DIMENSIONS */
+  width: 100%;
+  height: auto;
+
+  /* (B2) IMAGE FIT */
+  /* contain | cover | fill | scale-down */
+  object-fit: cover;
+}
+
+/* (C) LIGHTBOX IMAGE - FULLSCREEN ALTERNATIVE *
+#lightbox img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+ */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 75%;
+    //max-width: 75%;
+}
