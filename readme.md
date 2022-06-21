@@ -15,5 +15,5 @@
 ![Pull Requests](https://img.shields.io/github/issues-pr/DianaZawislak/My-Portfolio?style=plastic)
 ![Contributors](https://img.shields.io/github/contributors/DianaZawislak/My-Portfolio?style=plastic)
 ![Languages](https://img.shields.io/github/languages/count/DianaZawislak/My-Portfolio?style=plastic) 
-![Docker](https://img.shields.io/docker/automated/dianazawislak/mit-activityMy-Portfolio?style=plastic)
-
+[![Docker](https://img.shields.io/docker/automated/dianazawislak/mit-activityMy-Portfolio?style=plastic)](https://img.shields.io/docker/automated/dianazawislak/portfolio?color=ff69b4)
+https://img.shields.io/docker/pulls/dianazawislak/portfolio?color=orange&style=plastic
