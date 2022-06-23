@@ -1,16 +1,47 @@
 {% extends "base.html" %}
-<article>{% block content %}
-    <div class="row">
-    <div class="col-6">
-    <h1>About This Project</h1>
+{% block content %}
 
-        <p class="fs-5">This is Project 3 in Web Development Systems graduate class (IS-601) at NJIT with professor Keith Williams.<br>
-        </p>
-    </div>
+    <img src="{{ url_for('static', filename='images/njit.jpg') }}" class="img-fluid" alt="docker1">
 
-        <div class="col-6"><img src="{{ url_for('static', filename='images/njit.jpeg') }}"
-                                class="img-fluid mb-5" alt="njit"
-                                loading="lazy"></div>
-    </div>
+    <div class="container-fluid py-5">
+        <div class="row align-items stretch">
+            <div class="col-7">
+                <p class="fs-5">Results-driven professional with solid knowledge in testing and deployment automation
+                    and configuration management. Proficient in Docker, Git, Source Code Management, GitHub, Pycharm,
+                    other IDE's and setting up flawless Continuous Integration/ Delivery pipelines.
+                </p>
+
+                <p class="fs-5"> Excellent at systems analysis and full cycle project management and methodologies. Experience
+                    includes hands-on system development efforts including application requirements, testing and
+                    support. Other competencies include Python, Python libraries, Bootstrap, WtfForms, creating and
+                    utilizing blueprints, REACT, Java, Javascript, Linux and Adobe Creative Suite.</p>
+                <ul class="fs-5">
+                    <li> Exceptionally skilled in managing multiple projects and project/release management.</li>
+
+                    <li> Demonstrated ability to effectively establish and maintain working relationships across
+                        disciplines.
+                    </li>
+
+                    <li> Hands-on knowledge of Source Code Management (Version Control System) with Git.</li>
+
+                </ul>
+                <br>
+
+               <p class="fs-5"> Education:<br><br>
+
+                New Jersey Institute of Technology, Newark, NJ<br>
+                Master's Certificate in Computer Science<br>
+                <br>
+                Walsh College, Troy, MI<br>
+                Bachelor of Science, Finance</p>
+
+            </div>
+            <div class="col-5">
+                <img src="{{ url_for('static', filename='images/me.png') }}"
+                     class="img-fluid"
+                     alt="me">
+            </div>
+
+
+
 {% endblock %}
-</article>
