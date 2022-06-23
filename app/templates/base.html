@@ -33,7 +33,7 @@
             {% from 'bootstrap5/utils.html' import render_messages %}
             {% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
 
-            <nav class="navbar navbar-default navbar-expand-lg px-3 rounded-3">
+            <nav class="navbar navbar-default  navbar-light navbar-expand-lg px-3 rounded-3">
                 <a class="navbar-brand ml-5">
                     <img src="{{ url_for('static', filename='images/logo1.png') }}" height="60" width="60" alt="">
                 </a>
@@ -41,11 +41,13 @@
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <div class="navbar-nav mr-auto">
+                    <div class="navbar-nav mr-auto box">
                         {{ render_nav_item('simple_pages.index', 'Home') }}
-                        {{ render_nav_item('simple_pages.about','About') }}
+                    </div>
+                       <div class="navbar-nav mr-auto box"> {{ render_nav_item('simple_pages.about','About') }}
 
                     </div>
                 </div>

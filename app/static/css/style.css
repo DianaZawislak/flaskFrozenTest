@@ -1,20 +1,20 @@
 
 body {
 font-size: 100%;
-    background-image: url(../images/cs.jpg);
+    background-image: url(../images/compscience.png);
     background-repeat: round;
     background-size: 100%;
     height: 100%;
     margin: 3px;
     background-attachment: fixed;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgb(255, 255, 255, 0.8);
     background-blend-mode: lighten;
 }
 
 
 /*------------------------------ Navbar Custom -------------------------------*/
 .navbar-default {
-    background-image: linear-gradient(#585858, #909090) !important;
+    background-image: linear-gradient(#070707, #909090) !important;
 
 }
 
@@ -54,7 +54,7 @@ font-size: 100%;
 }
 
 .navbar-toggler {
-    border: 2px solid #303030 !important;
+    border: 1px solid #303030 !important;
 }
 
 .dropdown-menu {
@@ -70,9 +70,10 @@ a {
 }
 /*-------- active pill color --------*/
 .active {
-    color: darkgray !important;
-    background-color: dimgray;
-    border-radius: 6px;
+    color: #a4a3a3 !important;
+    background-color: #484545;
+    border-radius: 5px;
+
 }
 /*--------- border-------------------*/
 .outset {
@@ -174,7 +175,7 @@ a {
 }
 
 /*ZOOM ON HOVER */
-#zoomA:click { transform: scale(1.7); }
+#zoomA:hover { transform: scale(1.7); }
 .contbcgrd {
     background-color: darkgray;
 }
@@ -272,3 +273,18 @@ a {
     width: 75%;
     //max-width: 75%;
 }
+
+.box {
+    text-decoration: none;
+    color: #FFF;
+    background: transparent;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    border: 0px solid #565353;
+    margin: 0 10px;
+}
+
+
