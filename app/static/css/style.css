@@ -88,6 +88,12 @@ a {
 
 }
 
+.borderright {
+    border-right: 1px solid #c0bcbc;
+
+}
+
+
 /*------------------------- Font sizes and colors-----------------*/
 .h7 {
     font-size: 12px;
@@ -247,7 +253,7 @@ a {
     cursor: pointer;
     transition: 1s;
     display: block;
-    margin-left: auto;
+    margin-left: 0px;
     margin-right: auto
 }
 

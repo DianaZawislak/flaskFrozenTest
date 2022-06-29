@@ -2,23 +2,34 @@
 {% block content %}
      <h1 style="text-align: center">Welcome to my portfolio</h1>
  <hr class="featurette-divider">
+    <br>
+    <br>
     <div class="row">
-        <article class="col-9 lh-lg fs-5 mb-3">
+        <div class="col-9 lh-lg fs-5 mb-3 borderright">
 
             <h3> RESUME  (click to see in full screen)</h3>
+            <h4>Click <a href="https://1drv.ms/b/s!As4WOhnJINdeg_siwyj0xONe_H3jTA">HERE</a>  to dowload</h4>
           <img id="myImg" src="{{ url_for('static', filename='images/resume2022.JPG') }}"
                          class="img-fluid my-3" alt="resume" width="900"
                          loading="lazy">
 
+        </div>
+
+<div class="col-3">
+            <h3> SOCIAL LINKS</h3>
+    <a href="https://www.linkedin.com/in/dianazawislak1980/" target="_blank"> <img src="{{ url_for('static', filename='images/linkedin.png') }}" class="img-fluid" alt="linkedin"></a>
+
+    <a href="https://github.com/DianaZawislak" target="_blank"> <img src="{{ url_for('static', filename='images/github.png') }}" class="img-fluid" alt="linkedin"></a>
+</div>
 <!-- The Modal -->
 <div id="myModal" class="modal">
    <img class="modal-content" id="img01">
 
 </div>
             <hr class="featurette-divider">
-        </article>
+        </div>
 
-    </div>
+
 
    <script>
 // Get the modal
