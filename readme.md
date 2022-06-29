@@ -1,4 +1,6 @@
 ## To view app locally run docker compose up --build
+## open localhost:80
+
 
 # Deployment Status & Links To Production and Development
 
