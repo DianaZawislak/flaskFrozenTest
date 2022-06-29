@@ -1,62 +1,80 @@
 {% extends "base.html" %}
 {% block content %}
-     <h1 style="text-align: center">Welcome to my portfolio</h1>
- <hr class="featurette-divider">
+    <h1 style="text-align: center">Welcome to my portfolio</h1>
+    <hr class="featurette-divider">
     <br>
     <br>
     <div class="row">
-        <div class="col-9 lh-lg fs-5 mb-3 borderright">
+        <div class="col-8 lh-lg fs-5 mb-3 borderright">
 
-            <h3> RESUME  (click to see in full screen)</h3>
-            <h4>Click <a href="https://1drv.ms/b/s!As4WOhnJINdeg_siwyj0xONe_H3jTA">HERE</a>  to dowload</h4>
-          <img id="myImg" src="{{ url_for('static', filename='images/resume2022.JPG') }}"
-                         class="img-fluid my-3" alt="resume" width="900"
-                         loading="lazy">
+            <h3> RESUME (click to see in full screen)</h3>
+            <h4>Click <a href="https://1drv.ms/b/s!As4WOhnJINdeg_siwyj0xONe_H3jTA">HERE</a> to dowload</h4>
+            <img id="myImg" src="{{ url_for('static', filename='images/resume2022.JPG') }}"
+                 class="img-fluid my-3" alt="resume" width="900"
+                 loading="lazy">
 
         </div>
 
-<div class="col-3">
+        <div class="col-4">
             <h3> SOCIAL LINKS</h3>
-    <a href="https://www.linkedin.com/in/dianazawislak1980/" target="_blank"> <img src="{{ url_for('static', filename='images/linkedin.png') }}" class="img-fluid" alt="linkedin"></a>
+            <a href="https://www.linkedin.com/in/dianazawislak1980/" target="_blank"> <img
+                    src="{{ url_for('static', filename='images/linkedin.png') }}" class="img-fluid" alt="linkedin"></a>
 
-    <a href="https://github.com/DianaZawislak" target="_blank"> <img src="{{ url_for('static', filename='images/github.png') }}" class="img-fluid" alt="linkedin"></a>
-</div>
-<!-- The Modal -->
-<div id="myModal" class="modal">
-   <img class="modal-content" id="img01">
+            <a href="https://github.com/DianaZawislak" target="_blank"> <img
+                    src="{{ url_for('static', filename='images/github.png') }}" class="img-fluid" alt="linkedin"></a>
+            <br>
+            <br>
+            <br>
+            <h3> PROJECTS</h3>
+            <ol>
+                <li> <p class="fs-16" align="justify">Bank - simple bank application demonstrating ability to integrate user function such
+                    as registration, login file upload and profile information as well as administrative function such
+                    as user management. application also demonstrates calculations of individual user balance as well as
+                    total bank balance.
+                    <br><br>
+                    Production Deployment Link --> <a href="https://mybank-prod.herokuapp.com/">Diana's Bank</a>
+                    GitHub Repository Link --> <a href="https://github.com/DianaZawislak/My-Bank---IS601">Diana's
+                        Bank</a></p>
+                </li>
+            </ol>
 
-</div>
-            <hr class="featurette-divider">
         </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <img class="modal-content" id="img01">
+
+        </div>
+        <hr class="featurette-divider">
+    </div>
 
 
 
-   <script>
-// Get the modal
-var modal = document.getElementById('myModal');
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    modalImg.alt = this.alt;
-    captionText.innerHTML = this.alt;
-}
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
 
 
-// When the user clicks on <span> (x), close the modal
-modal.onclick = function() {
-    img01.className += " out";
-    setTimeout(function() {
-       modal.style.display = "none";
-       img01.className = "modal-content";
-     }, 400);
+        // When the user clicks on <span> (x), close the modal
+        modal.onclick = function () {
+            img01.className += " out";
+            setTimeout(function () {
+                modal.style.display = "none";
+                img01.className = "modal-content";
+            }, 400);
 
- }
+        }
 
-</script>
+    </script>
 {% endblock %}
 
