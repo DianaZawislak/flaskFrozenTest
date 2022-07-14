@@ -2,11 +2,15 @@
 {% block content %}
 
     <img src="{{ url_for('static', filename='images/njit.jpg') }}" class="img-fluid" alt="docker1">
-
+<div class="col-lg-5 col-sm-12 mb-3 d-lg-none">
+                <img src="{{ url_for('static', filename='images/me.png') }}"
+                     class="img-fluid"
+                     alt="me">
+            </div>
     <div class="container-fluid py-5">
         <div class="row align-items stretch">
-            <div class="col-7">
-                <p class="fs-5 thicker">Results-driven professional with solid knowledge in testing and deployment automation
+            <div class="col-lg-7 col-sm-12 fs-5 mb-3">
+                <p class="fs-5 thicker ">Results-driven professional with solid knowledge in testing and deployment automation
                     and configuration management. Proficient in Docker, Git, Source Code Management, GitHub, Pycharm,
                     other IDE's and setting up flawless Continuous Integration/ Delivery pipelines.
                 </p>
@@ -36,7 +40,7 @@
                 Bachelor of Science, Finance</p>
 
             </div>
-            <div class="col-5">
+            <div class="col-lg-5 col-sm-12 mb-3 d-none d-lg-block">
                 <img src="{{ url_for('static', filename='images/me.png') }}"
                      class="img-fluid"
                      alt="me">
